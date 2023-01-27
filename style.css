@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #E8E8E8;
+    margin: auto;
+    max-width: 1440px;
+    min-width: 360px;
+    max-height: 1024px;
+}
+
+header {
+    float: left;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#input {
+    resize: none;
+    border: none;
+    outline: none;
+    height: 50%;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: #0A3871;
+}
+
+#input::placeholder {
+    color: #0A3871;
+}
+
+.botoes {
+    margin-top: 10px;
+}
+
+.botoes button {
+    margin: 0 15px 15px 0;
+    padding: 12px 60px;
+    border: 1px solid #0A3871;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+#criptografar {
+    background-color: #0A3871;
+    color: white;
+}
+
+#criptografar:hover {
+    background-color: white;
+    color: #0A3871;
+    transition: .3s;
+}
+
+#descriptografar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+#descriptografar:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: .3s;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    margin-top: 1.5rem;
+    height: 92vh;
+    border-radius: 24px;
+}
+
+.section1-contanier {
+    margin-top: 20px;
+}
+
+.section2 h3 {
+    padding: 0 50px;
+}
+
+.section2 img {
+    display: block;
+    margin-top: 17vh;
+}
+
+#paragrafo {
+    padding: 0 50px;
+}
+
+#output {
+    display: none;
+    border: none;
+    resize: none;
+    margin: auto;
+    margin-top: 20px;
+    width: 320px;
+    height: 450px;
+    font-size: 1.2rem;
+}
+
+#botao-copiar {
+    display: none;
+    background-color: white;
+    color: #0A3871;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 12px 120px;
+    border: 1px solid #0A3871;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+#botao-copiar:hover  {
+    background-color: #0A3871;
+    color: white;
+    transition: .3s;
+}
+
+#mensagem {
+    display: none;
+    margin-bottom: 10px;
+    background-color: rgb(22, 158, 22);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* responsivo */
+
+@media screen and (max-width: 1050px) {
+    header {
+        float: none;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .section1 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .section2 {
+        width: 90%;
+        margin: auto;
+        height: 38vh;
+        padding-bottom: 13px;
+    }
+
+    #input {
+        height: 34vh;
+        margin-top: 5%;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+ 
+    .section2 h3 {
+        margin: 20px 0;
+    }
+
+    #output {
+        width: 90%;
+        height: 24vh;
+    }
+
+    #imagem {
+        display: none;
+    }
+
+    #botao-copiar {
+        margin-bottom: 0;
+    }
+}
