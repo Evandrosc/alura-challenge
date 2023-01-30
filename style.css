@@ -39,6 +39,7 @@ main {
 }
 
 #input {
+    background-color: #E8E8E8;
     resize: none;
     border: none;
     outline: none;
@@ -118,8 +119,7 @@ main {
     resize: none;
     margin: auto;
     margin-top: 20px;
-    width: 320px;
-    height: 450px;
+    width: 90%;
     font-size: 1.2rem;
 }
 
@@ -176,13 +176,16 @@ footer a:hover {
     .section2 {
         width: 90%;
         margin: auto;
-        height: 38vh;
-        padding-bottom: 13px;
+        height: auto;
+        padding: 20px 0;
     }
 
     #input {
-        height: 34vh;
         margin-top: 5%;
+    }
+
+    #output {
+        margin-bottom: 10px;
     }
 
     .botoes {
@@ -195,11 +198,6 @@ footer a:hover {
     .botoes button {
     width: 45%;
     padding: 17px 0;
-    }
-
-    #output {
-        width: 90%;
-        height: 24vh;
     }
 
     #imagem {

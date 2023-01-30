@@ -1,6 +1,5 @@
 function criptografar() {
     var texto = document.getElementById("input").value.toLowerCase();
-    
     var txtcifrado = texto.replace(/e/igm,"enter");
     var txtcifrado = txtcifrado.replace(/o/igm,"ober");
     var txtcifrado = txtcifrado.replace(/i/igm,"imes");
@@ -13,8 +12,14 @@ function criptografar() {
     document.getElementById("output").innerHTML = txtcifrado;
     document.getElementById("input").innerHTML = " ";
     document.getElementById("botao-copiar").style.display = "block";
+    document.getElementById("output").style.height = "auto";
+    var outputHeight = document.getElementById("output").scrollHeight;
+    if (outputHeight > 450) {
+    document.getElementById("output").style.height = "450px";
+    } else {
+    document.getElementById("output").style.height = outputHeight + "px";
+    }
 }
-
 function descriptografar() {
     var texto = document.getElementById("input").value.toLowerCase();
     var txtcifrado = texto.replace(/enter/igm,"e");
@@ -28,7 +33,14 @@ function descriptografar() {
     document.getElementById("output").style.display = "block";
     document.getElementById("output").innerHTML = txtcifrado;
     document.getElementById("botao-copiar").style.display = "block";
-  }
+    document.getElementById("output").style.height = "auto";
+    var outputHeight = document.getElementById("output").scrollHeight;
+    if (outputHeight > 450) {
+    document.getElementById("output").style.height = "450px";
+    } else {
+    document.getElementById("output").style.height = outputHeight + "px";
+    }
+}
 
 const botaoCopiar = document.getElementById("botao-copiar");
 const output = document.getElementById("output");
