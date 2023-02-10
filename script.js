@@ -12,7 +12,7 @@ function criptografar() {
     document.getElementById("output").innerHTML = txtcifrado;
     document.getElementById("input").innerHTML = " ";
     document.getElementById("botao-copiar").style.display = "block";
-    document.getElementById("output").style.height = "auto";
+    document.getElementById("output").style.height = "30px";
     var outputHeight = document.getElementById("output").scrollHeight;
     if (outputHeight > 450) {
     document.getElementById("output").style.height = "450px";
@@ -33,7 +33,7 @@ function descriptografar() {
     document.getElementById("output").style.display = "block";
     document.getElementById("output").innerHTML = txtcifrado;
     document.getElementById("botao-copiar").style.display = "block";
-    document.getElementById("output").style.height = "auto";
+    document.getElementById("output").style.height = "30px";
     var outputHeight = document.getElementById("output").scrollHeight;
     if (outputHeight > 450) {
     document.getElementById("output").style.height = "450px";
