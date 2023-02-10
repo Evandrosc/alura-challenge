@@ -42,7 +42,7 @@ main {
     resize: none;
     border: none;
     outline: none;
-    height: 50%;
+    height: 67%;
     margin-top: 50px;
     font-size: 1.2rem;
     color: #0A3871;
@@ -185,7 +185,7 @@ footer a:hover {
     }
 
     #input {
-        margin-top: 0;
+        margin-top: 5%;
     }
 
     #output {
